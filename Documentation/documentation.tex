@@ -5,25 +5,29 @@
 \usepackage[left=3cm,right=3cm,top=3cm,bottom=3cm]{geometry}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+\renewcommand{\contentsname}{Inhalt}
 \author{Manuel Fehren}
-\title{automatisierter Roboterarm}
+\title{Automatisierter Roboterarm}
 \begin{document}
 \maketitle
 \begin{center}
-Ein simpler Servobetriebener 6-DOF Roboterarm, welcher durch ROS (Robot-Operation-System) automatisiert wurde, um zum Beispiel Schokolinsen mit Hilfe einer Kamera zu Automatisieren
+Ein simpler Servobetriebener 6-DOF Roboterarm, welcher durch ROS (Robot-Operation-System) automatisiert wurde, um zum Beispiel Schokolinsen mit Hilfe einer Kamera zu sortieren
 \end{center}
+\thispagestyle{empty}
 \newpage
 \tableofcontents
+\thispagestyle{empty}
 \newpage
+\setcounter{page}{1}
 \section{Einleitung}
 Die eigentliche Idee war es automatisch kleine Gegenstände, zum Beispiel Schrauben oder Schoko-Linsen, mit Hilfe einer Kamera und eines Manipulators zu erkennen und sortieren.
 \section{Auswahl der Software}
-Für die Software das ROS (Robot-Operation-System) verwendet, da dieses für das Projekt eine gute Grundbasis bildet und schon viele nützliche Tools bereitstellt.
+Für die Software das ROS (Robot-Operation-System) verwendet, da dieses für das Projekt eine gute Grundbasis bildet und schon viele nützliche Tools bereitstellt.\\
 Für die optische Verarbeitung wird das tool openCV verwendet.
 \section{Auswahl der Hardware}
 \subsection{Grundgestell}
-Bei der Mechanik waren ein Roboterarm sowie ein Gestell aus Profilschienen und Schrittmotoren, ähnliche eines XYZ 3D-Druckers, als erste Idee.
-Bei dem XYZ Gestell sind die Vorteile, dass es später leichter ist für die geografische Berechnung und die maximale Belastung des Manipulators größer ist. Jedoch sind die Kosten höher im Gegensatz zu einem kleinem Roboterarm.
+Bei der Mechanik waren ein Roboterarm sowie ein Gestell aus Profilschienen und Schrittmotoren, ähnliche eines XYZ 3D-Druckers, als erste Idee.\\
+Bei dem XYZ Gestell sind die Vorteile, dass es später leichter ist für die geografische Berechnung und die maximale Belastung des Manipulators größer ist. Jedoch sind die Kosten höher im Gegensatz zu einem kleinem Roboterarm.\\
 Der Grund für die Wahl des Roboterarms sind unter anderem die neuen Herausforderungen, sowie die weiterbildung in Hinsicht auf Industrielle Roboter wie zum Beispiel Solche der Firma Kuka.
 \subsection{Servos}
 Die originalen Servos des Roboterarms sind in Berücksichtigung auf der möglichen Hebelwirklung nicht ausreichend, weshalb diese durch stärkere Servos ausgetauscht wurden.
